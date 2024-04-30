@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent implements OnInit {
   title = 'todoapp';
   readonly APIUrl = 'http://localhost:5038/api/todoapp/';
-  notes: any[];
+  notes: any[] | undefined;
 
   constructor(private http: HttpClient) {}
 
